@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/db
+    username: postgres
+    password: postgres
+  sql:
+    init:
+      mode: always
+
+  profiles:
+    active: test
+
+  jpa:
+    generate-ddl: false
+    hibernate:
+      ddl-auto: none
+
+logging:
+  level:
+    ROOT: ERROR
+
